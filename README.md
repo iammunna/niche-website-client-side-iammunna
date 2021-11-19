@@ -1,6 +1,6 @@
 # Kedara | Niche Website
 
-This project is live on (https://khudalagse-c7191.web.app/).
+This project is live on (https://medifill-ad87b.web.app/).
 
 ## Description
 
