@@ -6,7 +6,7 @@ const ManageProducts = () => {
     const [isLoading, setIsLoading] = useState(false);
 
 	useEffect(() => {
-		fetch('http://localhost:5000/products')
+		fetch('https://young-taiga-91449.herokuapp.com/products')
 			.then(res => res.json())
 			.then(data => setProducts(data))
             .finally(()=> setIsLoading(true));
@@ -20,7 +20,7 @@ const ManageProducts = () => {
 		const proceed = window.confirm('Are you sure?');
 
 		if (proceed) {
-			const url = `http://localhost:5000/products/${id}`;
+			const url = `https://young-taiga-91449.herokuapp.com/products/${id}`;
 			fetch(url, {
 				method: 'DELETE'
 			})

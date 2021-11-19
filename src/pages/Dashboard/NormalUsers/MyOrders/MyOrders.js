@@ -10,7 +10,7 @@ const MyOrders = () => {
 	const [isLoading, setIsLoading] = useState(false);
 
 	useEffect(() => {
-		fetch('http://localhost:5000/allOrders')
+		fetch('https://young-taiga-91449.herokuapp.com/allOrders')
 			.then(res => res.json())
 			.then(data => setOrders(data))
 			.finally(() => setIsLoading(true));
@@ -24,7 +24,7 @@ const MyOrders = () => {
 		const proceed = window.confirm('Are you sure, You want to Delete?');
 
 		if (proceed) {
-			const url = `http://localhost:5000/allOrders${id}`;
+			const url = `https://young-taiga-91449.herokuapp.com/allOrders${id}`;
 			fetch(url, {
 				method: 'DELETE'
 			})

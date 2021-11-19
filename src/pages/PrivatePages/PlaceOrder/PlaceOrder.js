@@ -35,7 +35,7 @@ const PlaceOrder = () => {
 		const newOrder = { singleProduct, serviceName, serviceEmail, address1, address2, city, zip, productId }
 
 
-		fetch('http://localhost:5000/allOrders', {
+		fetch('https://young-taiga-91449.herokuapp.com/allOrders', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json'
@@ -55,7 +55,7 @@ const PlaceOrder = () => {
 	}
 
 	useEffect(() => {
-		const url = `http://localhost:5000/products`;
+		const url = `https://young-taiga-91449.herokuapp.com/products`;
 		fetch(url)
 			.then(res => res.json())
 			.then(data => setOrder(data))
