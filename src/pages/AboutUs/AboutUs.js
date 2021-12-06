@@ -11,7 +11,7 @@ const AboutUs = () => {
 
                 <div className="text-left d-flex">
                     <div className="m-5">
-                        <h2 className="text-info">Our Product Quality</h2>
+                        <h2 className="text-info">Our best Product Quality</h2>
                         <p>
                             Kedara is an online chir and grocery delivery platform brand owned by Delivery Hero, which is headquartered in Berlin, Germany. Today, Kedara operates as the lead brand for Delivery Hero in Asia.
                         </p>
